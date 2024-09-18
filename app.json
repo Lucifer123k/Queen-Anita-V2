@@ -6,30 +6,30 @@
     "success_url": "/",
     "stack": "container",
   
-    "env": {
-      "OWNER_NAME": {
-        "description": "Name for Bot Owner",
+    "env": {true
+      "OWNER_NAME": {true,
+        "description": "true",
         "value": "Queen_Anita-V2",
         "required": true
       },
   
-      "WELCOME": {
+      "WELCOME": {true
         "description": "put 'false' or 'true' to enable & disable WELCOME ",
-        "value": "false",
+        "value": "true",
         "required": false
       },
-      "USER_IMAGES": {
+      "USER_IMAGES":{"https://pin.it/6ECesXLjX"
         "description": "Menu Images",
         "value": "https://i.imgur.com/H4qeXwa.jpeg",
-        "required": false
+        "required": true
       },
   
-      "GOODBYE": {
+      "GOODBYE": {true
         "description": "put 'false' or 'true' to enable & disable GOODBYE ",
-        "value": "false",
+        "value": "true",
         "required": false
       },
-      "MENU": {
+      "MENU": {1
         "description": "choose 1, 2, 3",
         "value": "1"
       },
@@ -47,17 +47,17 @@
         "required": false,
         "value": "Africa/Lagos"
       },
-      "READ_COMMAND": {
+      "READ_COMMAND": {true
         "description": " Read bot cmds",
         "required": false,
         "value": "false"
       },
-      "WARN_COUNT": {
+      "WARN_COUNT": {3
         "description": " Warn count for users to kick/block when warn limit exceed!",
         "required": false,
         "value": "3"
       },
-      "AUTO_SAVE_STATUS": {
+      "AUTO_SAVE_STATUS": {true
         "description": " Auto save whatsapp status",
         "required": false,
         "value": "false"
@@ -103,15 +103,15 @@
       },
       "OWNER_NUMBER": {
         "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-        "value": "2349066528353"
+        "value": "2349124644096"
       },
-      "SESSION_ID": {
-        "description": "put your SESSION_ID here.",
+      "SESSION_ID": {eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieUN1dCtTVFduVFhpU1BPcURTQndnQXMwNkxFYjcvMGdvVDllOU12OGpHND0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTXJTekZBRkpMN0lXWHpCU0pYNUpGMm54MHhiaEg4NEk4cUYxZklXTWtUQT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI4SHJmbFNXeWI4L2VjQlZ1bkVSNnMvSWdKSVo2ak53RCtHUlBRaEtnRDFzPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJIWmxHWU9xcW04cnRDWHU1T2NTbklCeDJIaHFWczJGK3FyQy84d3pUWlJrPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNNNDI5SXRuNEdFZVNmV20yTVhQR1JsZnpnaG9BVmV6dXNwMElDT3NKMTA9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImN1cnRUVE9xeTZDcHZIaldNUE1QOGtOelptTmxqbWNPNFpEZ2dPQTl2V0E9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoic0J5T2szUEg1eXIzSWZVNkMwSTd5VXFJOTZ4cnljV0NrellvWmVSaVJscz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieTI2dWQyRXFrejZOdlh5M0N6Z1B6NFpuL004UzhRMjYwZlp3NTdRTkgzTT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlVCK3pIbGZkVUg0cXlhczhEVVhKVENTYld4ZW5nU1IyMGVtVzEvdFhlTXhLS29uWnZHUUJpc2V4cjJ6eGRibXpsYWhwaGVsVWJ5TVNLMmhYekFuMGlRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTA2LCJhZHZTZWNyZXRLZXkiOiJhc0lqa0xaR09vS2NEOW5nVGE0R2Qxd2xvTHFRN2dRbjlucmFYZWJTVkkwPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJZcG0xUzdjNVJWdWRFZ0xvVzlqZHNBIiwicGhvbmVJZCI6Ijg1MzY4MTc0LTE5ZTQtNDBiOS1iZjFmLWNiYmEzZjMwMWRiZCIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJxVWxHNHJGa05IeFdrQzZHU3A0YzJGQVB6QkE9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiMzVkQ3hPNmRPcnR2N1RyYkxqMWs4OUFMQXpzPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IjRGTEVGVzFDIiwibWUiOnsiaWQiOiIyMzQ3MDM4MjcxNjU4OjIwQHMud2hhdHNhcHAubmV0IiwibmFtZSI6IuC8klBSSU5DRSBCRU5JTUFSVeC8kiJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDSWlCL0VvUWcvT3F0d1lZQVNBQUtBQT0iLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiMk51MTBVb3prRlM0VE1ZNE5lam9MQTZoQlk4YkRXYVJQbjZiSS82dEYwZz0iLCJhY2NvdW50U2lnbmF0dXJlIjoiNXU0Y082TGJDZHVMSnMxY0VaYzVzR3c5aFdTdTFGWHFEelpxSmZmWkU4c1ZmQVBON1VYWEFBV3lRM2tmZU42VS9ONjllRnNuNDY2QVd3b0pOeVliREE9PSIsImRldmljZVNpZ25hdHVyZSI6IlJxK2VJQjdqM3BmaUVDazZoSnB4R1YrV0hlMVJTSExGV3ZPVzNuRzcvazdVNGFPNmZ3WStZV2RDdVRjN2FlUTZEbUowZEE0cjNBd3NSRUsxWVo1TWl3PT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjM0NzAzODI3MTY1ODoyMEBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJkamJ0ZEZLTTVCVXVFekdPRFhvNkN3T29RV1BHdzFta1Q1K215UCtyUmRJIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzI2NjU4OTYwLCJteUFwcFN0YXRlS2V5SWQiOiJBQUFBQUduRiJ9
+        "description": "put your SESSION_ID here.eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieUN1dCtTVFduVFhpU1BPcURTQndnQXMwNkxFYjcvMGdvVDllOU12OGpHND0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiTXJTekZBRkpMN0lXWHpCU0pYNUpGMm54MHhiaEg4NEk4cUYxZklXTWtUQT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI4SHJmbFNXeWI4L2VjQlZ1bkVSNnMvSWdKSVo2ak53RCtHUlBRaEtnRDFzPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJIWmxHWU9xcW04cnRDWHU1T2NTbklCeDJIaHFWczJGK3FyQy84d3pUWlJrPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNNNDI5SXRuNEdFZVNmV20yTVhQR1JsZnpnaG9BVmV6dXNwMElDT3NKMTA9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6ImN1cnRUVE9xeTZDcHZIaldNUE1QOGtOelptTmxqbWNPNFpEZ2dPQTl2V0E9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoic0J5T2szUEg1eXIzSWZVNkMwSTd5VXFJOTZ4cnljV0NrellvWmVSaVJscz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieTI2dWQyRXFrejZOdlh5M0N6Z1B6NFpuL004UzhRMjYwZlp3NTdRTkgzTT0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IlVCK3pIbGZkVUg0cXlhczhEVVhKVENTYld4ZW5nU1IyMGVtVzEvdFhlTXhLS29uWnZHUUJpc2V4cjJ6eGRibXpsYWhwaGVsVWJ5TVNLMmhYekFuMGlRPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTA2LCJhZHZTZWNyZXRLZXkiOiJhc0lqa0xaR09vS2NEOW5nVGE0R2Qxd2xvTHFRN2dRbjlucmFYZWJTVkkwPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJZcG0xUzdjNVJWdWRFZ0xvVzlqZHNBIiwicGhvbmVJZCI6Ijg1MzY4MTc0LTE5ZTQtNDBiOS1iZjFmLWNiYmEzZjMwMWRiZCIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJxVWxHNHJGa05IeFdrQzZHU3A0YzJGQVB6QkE9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiMzVkQ3hPNmRPcnR2N1RyYkxqMWs4OUFMQXpzPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IjRGTEVGVzFDIiwibWUiOnsiaWQiOiIyMzQ3MDM4MjcxNjU4OjIwQHMud2hhdHNhcHAubmV0IiwibmFtZSI6IuC8klBSSU5DRSBCRU5JTUFSVeC8kiJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDSWlCL0VvUWcvT3F0d1lZQVNBQUtBQT0iLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiMk51MTBVb3prRlM0VE1ZNE5lam9MQTZoQlk4YkRXYVJQbjZiSS82dEYwZz0iLCJhY2NvdW50U2lnbmF0dXJlIjoiNXU0Y082TGJDZHVMSnMxY0VaYzVzR3c5aFdTdTFGWHFEelpxSmZmWkU4c1ZmQVBON1VYWEFBV3lRM2tmZU42VS9ONjllRnNuNDY2QVd3b0pOeVliREE9PSIsImRldmljZVNpZ25hdHVyZSI6IlJxK2VJQjdqM3BmaUVDazZoSnB4R1YrV0hlMVJTSExGV3ZPVzNuRzcvazdVNGFPNmZ3WStZV2RDdVRjN2FlUTZEbUowZEE0cjNBd3NSRUsxWVo1TWl3PT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjM0NzAzODI3MTY1ODoyMEBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJkamJ0ZEZLTTVCVXVFekdPRFhvNkN3T29RV1BHdzFta1Q1K215UCtyUmRJIn19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwibGFzdEFjY291bnRTeW5jVGltZXN0YW1wIjoxNzI2NjU4OTYwLCJteUFwcFN0YXRlS2V5SWQiOiJBQUFBQUduRiJ9",
         "value": ""
       },
       "MODE": {
         "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
-        "value": "public"
+        "value": "private"
       },
       "PACK_NAME": {
         "description": "Put Sticker Pack_Name.",
